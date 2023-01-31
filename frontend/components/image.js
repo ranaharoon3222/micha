@@ -8,12 +8,7 @@ const Image = ({ image, style }) => {
   // }
 
   return (
-  <img
-  
-      src={getStrapiMedia(image)}
-      alt={alternativeText || ""}
-
-    />
+  <img src={getStrapiMedia(image)}  alt={alternativeText || ""}  />
   )
 }
 
