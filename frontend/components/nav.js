@@ -8,9 +8,7 @@ const Nav = ({ categories }) => {
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
-              <Link href="/">
-                <a>Strapi Blog</a>
-              </Link>
+              <Link href="/">Strapi Blog</Link>
             </li>
           </ul>
         </div>
@@ -20,7 +18,7 @@ const Nav = ({ categories }) => {
               return (
                 <li key={category.id}>
                   <Link href={`/category/${category.attributes.slug}`}>
-                    <a className="uk-link-reset">{category.attributes.name}</a>
+                    {category.attributes.name}
                   </Link>
                 </li>
               )

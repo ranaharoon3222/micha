@@ -5,7 +5,7 @@ import NextImage from "./image"
 const Card = ({ article }) => {
   return (
     <Link href={`/article/${article.attributes.slug}`}>
-      <a className="uk-link-reset">
+     
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
             <NextImage image={article.attributes.image} />
@@ -19,7 +19,7 @@ const Card = ({ article }) => {
             </p>
           </div>
         </div>
-      </a>
+     
     </Link>
   )
 }
