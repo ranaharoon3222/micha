@@ -8,12 +8,11 @@ const Image = ({ image, style }) => {
   // }
 
   return (
-   <img
-      // loader={loader}
-      width={width || "100%"}
-      height={height || "100%"}
+  <img
+  
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
+
     />
   )
 }
