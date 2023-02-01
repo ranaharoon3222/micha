@@ -1,6 +1,7 @@
 import { getStrapiMedia } from "../lib/media"
 
 const Image = ({ image, style }) => {
+   if (!image.data) return;
   const { url, alternativeText, width, height } = image.data.attributes
 
   // const loader = () => {
